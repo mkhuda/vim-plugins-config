@@ -1,3 +1,3 @@
 # My Vim Config
 
-Don't use it, until you like it.
+Don't use it, unless you like it.
