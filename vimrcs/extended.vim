@@ -16,9 +16,13 @@ elseif has("win16") || has("win32")
 elseif has("gui_gtk2")
     set gfn=IBM\ Plex\ Mono:h14,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("linux")
-    set gfn=IBM\ Plex\ Mono:h14,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
+    set gfn=IBM\ Plex\ Mono\ 11
 elseif has("unix")
-    set gfn=Monospace\ 11
+    set gfn=IBM\ Plex\ Mono\ 10
+endif
+
+if has('gui_running')
+    set guifont=IBM\ Plex\ Mono\ 10
 endif
 
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
@@ -29,7 +33,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme peaksea
+colorscheme gruvbox 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,7 +52,6 @@ try
     set undofile
 catch
 endtry
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Command mode related
@@ -125,6 +128,7 @@ map <leader>g :Ack
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
+
 
 " Do :help cope if you are unsure what cope is. It's super useful!
 "
