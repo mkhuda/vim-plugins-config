@@ -22,6 +22,9 @@ map <C-l> :MRU<cr>
 " split open terminal
 map <leader>t :term++rows=13<cr>
 
+" new nerdTreeToggle
+map <leader>; :NERDTreeToggle<cr>
+
 " nerdTreeFocus
 map <leader>' :NERDTreeFocus<cr>
 " jsDoc configuration
