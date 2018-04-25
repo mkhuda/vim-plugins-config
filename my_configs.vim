@@ -19,6 +19,9 @@ map <leader>. :qa!<cr>
 " map MRU
 map <C-l> :MRU<cr>
 
+" split open terminal
+map <leader>t :term++rows=13<cr>
+
 " nerdTreeFocus
 map <leader>' :NERDTreeFocus<cr>
 " jsDoc configuration
