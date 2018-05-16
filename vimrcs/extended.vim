@@ -14,15 +14,15 @@ if has("mac") || has("macunix")
 elseif has("win16") || has("win32")
     set gfn=IBM\ Plex\ Mono:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
 elseif has("gui_gtk2")
-    set gfn=IBM\ Plex\ Mono:h14,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
+    set gfn=Ubuntu\ Mono:h11,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("linux")
-    set gfn=IBM\ Plex\ Mono\ 11
+    set gfn=Ubuntu\ Mono\ 11
 elseif has("unix")
-    set gfn=IBM\ Plex\ Mono\ 10
+    set gfn=Ubuntu\ Mono\ 11
 endif
 
 if has('gui_running')
-    set guifont=IBM\ Plex\ Mono\ 10
+    set guifont=Ubuntu\ Mono\ 11
 endif
 
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
