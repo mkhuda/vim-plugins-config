@@ -133,3 +133,9 @@ let g:prettier#autoformat = 0
 let g:prettier#config#parser = 'babylon'
 nmap <Leader>py <Plug>(Prettier)
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
+" vim es6 unused import
+let g:es6_imports_gui_fg_color = 'black'
+let g:es6_imports_gui_bg_color = 'yellow'
+autocmd BufWinEnter *.js,*.jsx,*.ts,*.tsx execute "ES6ImportsHighlight"
+autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx execute "ES6ImportsHighlight"
