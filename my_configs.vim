@@ -139,3 +139,7 @@ let g:es6_imports_gui_fg_color = 'black'
 let g:es6_imports_gui_bg_color = 'yellow'
 autocmd BufWinEnter *.js,*.jsx,*.ts,*.tsx execute "ES6ImportsHighlight"
 autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx execute "ES6ImportsHighlight"
+" language server for reasonml
+let g:LanguageClient_serverCommands = {
+    \ 'reason': ['/Users/ruangguru/Documents/reason-language-server']
+    \ }
